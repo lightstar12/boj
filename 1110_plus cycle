@@ -1,0 +1,12 @@
+f_num = int(input())
+cnt = 0
+r_num = f_num
+n_num = r_num % 10 * 10 + (int(r_num / 10) + r_num % 10) % 10
+cnt = cnt + 1
+while True:
+    if n_num == f_num:
+        break;
+    r_num = n_num
+    n_num = r_num % 10 * 10 + (int(r_num / 10) + r_num % 10) % 10
+    cnt = cnt + 1
+print(cnt)
